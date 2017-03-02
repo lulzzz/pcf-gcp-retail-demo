@@ -169,9 +169,10 @@ def get_image_feature(image_url_or_bytes, feature_list, limit=DEFAULT_LIMIT):
       }]
     }
 
+    # TODO, refactor function to support batch requests via lists im images / uris
     request['requests'][0]['features'] = [{ 'type': f, "maxResults": limit } for f in feature_list]
 
-    print request
+    #print request
     
     reponse_dict = get_google_client("vision").images().annotate(body=request).execute()
 
