@@ -1,4 +1,4 @@
-# pcf-gcp-ml-apis
+# Python wrapper for the "box 9 - 12" functionality 
 Access to Google Cloud APIs provided from endpoints in Pivotal Cloud Foundry.
 
 ## Python dependencies:
